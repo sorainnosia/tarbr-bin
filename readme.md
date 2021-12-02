@@ -53,3 +53,26 @@ Chaining is also available for GZip compression algorithm. For Zip format, it in
 multiple files into a single compressed file, it is not available for compression chaining and only
 available to be chained for -SPLITSIZE or -SPLITCOUNT
 ```
+
+## Normal Usage
+Merge multiplle files/folders into a single tarball file and compress it using brotli compression
+
+```
+   -TB <filename> <directory> -O "output.tar.br" -F
+```
+
+Output is "output.tar.br" and has a temporary file name "output.tar" that can be safely deleted
+
+Decompress a tarball brotli compressed file and extract the tarball into folder
+
+```
+   -UNTB "output.tar.br" -O "outputfolder" -F
+```
+Output is a folder name "outputfolder" that contains the decompressed and extracted files, a temporary file "output.tar" is created and can be safely deleted
+
+## Chaining
+There are two compressions methods, GZip using switch -GZ (-UNGZ to decompress) and Brotli using switch -BR (-UNBR to decompress). Compression modes can be made per single file, but normally it is chained or called after -TAR (merging of files/folders into one file) and then compress it resulting in .tar.gz (GZip) or .tar.br (Brotli). Zip compression can compress directly into a single file using -ZIP switch (-UNZIP to decompress.
+
+During chaining such as -BR switch, it does not need an input filename, because the input filename is the output of previous switch, however it can have extra options such as -F to force overwrite when the file already exist and -O to specify an output filename without using the default name. Each of the switch can has its own extra options (-F or -O).
+
+After a compression is done, the command can chain for example into -SPLITSIZE 1MB, in order to split the output into multiple files ending with <filename>.1 <filename>.2 for distributions and join it back using -JOIN <filename>.
