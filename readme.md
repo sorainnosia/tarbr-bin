@@ -80,7 +80,7 @@ After a compression is done, the command can chain for example into -SPLITSIZE 1
 ## Download
 At right side, click Releases and from the assets download the file for your operating system. For Windows x64 machine the smallest binary available is tarbr-win-x64-bflat.exe
 
-Download the executable file and rename it to bflat.exe and you use it via command prompt and CD into the directory or add it into PATH Environment Variable.
+Download the executable file and rename it to tarbr.exe and you use it via command prompt and CD into the directory or add it into PATH Environment Variable.
 ```
 tarbr.exe -TB <files> <folders> -F -O output.tar.br
 tarbr.exe -UNTB output.tar.br -F -O output
