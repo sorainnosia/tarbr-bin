@@ -55,7 +55,7 @@ available to be chained for -SPLITSIZE or -SPLITCOUNT
 ```
 
 ## Normal Usage
-Merge multiplle files/folders into a single tarball file and compress it using brotli compression
+Merge multiple files/folders into a single tarball file and compress it using brotli compression
 
 ```
    -TB <filename> <directory> -O "output.tar.br" -F
