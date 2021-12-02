@@ -71,8 +71,22 @@ Decompress a tarball brotli compressed file and extract the tarball into folder
 Output is a folder name "outputfolder" that contains the decompressed and extracted files, a temporary file "output.tar" is created and can be safely deleted
 
 ## Chaining
-There are two compressions methods, GZip using switch -GZ (-UNGZ to decompress) and Brotli using switch -BR (-UNBR to decompress). Compression modes can be made per single file, but normally it is chained or called after -TAR (merging of files/folders into one file) and then compress it resulting in .tar.gz (GZip) or .tar.br (Brotli). Zip compression can compress directly into a single file using -ZIP switch (-UNZIP to decompress.
+There are two compressions methods, GZip using switch -GZ (-UNGZ to decompress) and Brotli using switch -BR (-UNBR to decompress). Compression modes can be made per single file, but normally it is chained or called after -TAR (merging of files/folders into one file) and then compress it resulting in .tar.gz (GZip) or .tar.br (Brotli). Zip compression can compress directly into a single file using -ZIP switch (-UNZIP to decompress).
 
 During chaining such as -BR switch, it does not need an input filename, because the input filename is the output of previous switch, however it can have extra options such as -F to force overwrite when the file already exist and -O to specify an output filename without using the default name. Each of the switch can has its own extra options (-F or -O).
 
 After a compression is done, the command can chain for example into -SPLITSIZE 1MB, in order to split the output into multiple files ending with <filename>.1 <filename>.2 for distributions and join it back using -JOIN <filename>.
+   
+## Download
+At right side, click Release and from the assets download the file for your operating system. For Windows x64 machine the smallest binary available is tarbr-win-x64-bflat.exe
+
+Download the executable file and rename it to bflat.exe and you use it via command prompt and CD into the directory or add it into PATH Environment Variable.
+```
+tarbr.exe -TB <files> <folders> -F -O output.tar.br
+tarbr.exe -UNTB output.tar.br -F -O output
+```
+If <files> or <folders> contains space, it must be enclosed with quote for example 
+```
+tarbr.exe -TB "c:\my data\file.txt" -F -O output.tar.br
+tarbr.exe -UNTB output.tar.br -F -O "my output"
+```
