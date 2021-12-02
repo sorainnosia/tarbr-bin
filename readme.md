@@ -85,7 +85,7 @@ Download the executable file and rename it to tarbr.exe and you use it via comma
 tarbr.exe -TB <files> <folders> -F -O output.tar.br
 tarbr.exe -UNTB output.tar.br -F -O output
 ```
-If <files> or <folders> contains space, it must be enclosed with quote for example 
+If files or folders contains space, it must be enclosed with quote for example 
 ```
 tarbr.exe -TB "c:\my data\file.txt" -F -O output.tar.br
 tarbr.exe -UNTB output.tar.br -F -O "my output"
