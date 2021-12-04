@@ -193,7 +193,7 @@ tarbr.exe -UNTB output.tar.br -F -O output
 ```
 Output is "output" folder that contains the two files and a folder name Sheets
    
-Notice we uses -TB and -UNTB for Brotli algorithm to compress/decompress. To use ligher/faster such as GZip algorithm change -TB to -TG and -UNTB to -UNTG. You can change to other algorithm such as BZip2 by changing -TB to -TBZ and -UNTB to -UNTBZ, or ZLib algorithm -TZ and -UNTZ
+Notice we uses -TB and -UNTB for Brotli algorithm to compress/decompress. To use ligher/faster such as GZip algorithm change -TB to -TG and -UNTB to -UNTG. You can change to other algorithm such as BZip2 by which uses -TBZ and -UNTBZ, or ZLib algorithm which uses -TZ and -UNTZ respectively.
    
 Example of GZip algorithm
    
