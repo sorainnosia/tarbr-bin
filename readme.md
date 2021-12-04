@@ -183,23 +183,23 @@ tarbr.exe -UNTB output.tar.br -F -O "my output"
 ## Example
 Brotli compress "C:\Data\my file1.docx", "C:\Data\my file2.ppt" files and "C:\Data\Sheets" folder
 ```
-tarbr.exe **-TB** "C:\Data\my file1.docx" "C:\Data\my file2.ppt" "C:\Data\Sheets" -F -O output.tar.br
+tarbr.exe -TB "C:\Data\my file1.docx" "C:\Data\my file2.ppt" "C:\Data\Sheets" -F -O output.tar.br
 ```
 Output is output.tar.br which contains the two files and one folder.
 
 Copy the output to somewhere and decompress it
 ```
-tarbr.exe **-UNTB** output.tar.br -F -O output
+tarbr.exe -UNTB output.tar.br -F -O output
 ```
 Notice we uses -TB and -UNTB for Brotli algorithm to compress/decompress. To use ligher/faster such as GZip algorithm change -TB to -TG and -UNTB to -UNTG. You can change to other algorithm such as BZip2 by changing -TB to -TBZ and -UNTB to -UNTBZ, or ZLib algorithm -TZ and -UNTZ
    
 Example of GZip algorithm
    
 ```
-tarbr.exe **-TG** "C:\Data\my file1.docx" "C:\Data\my file2.ppt" "C:\Data\Sheets" -F -O output.tar.br
+tarbr.exe -TG "C:\Data\my file1.docx" "C:\Data\my file2.ppt" "C:\Data\Sheets" -F -O output.tar.br
 ```
 To decompress
 
 ```
-tarbr.exe **-UNTG** output.tar.br -F -O output
+tarbr.exe -UNTG output.tar.br -F -O output
 ```
