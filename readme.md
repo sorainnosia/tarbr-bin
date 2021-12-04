@@ -160,7 +160,7 @@ Decompress a tarball zlib compressed file and extract the tarball into folder
 Output is a folder name "outputfolder" that contains the decompressed and extracted files, a temporary file "output.tar" is created and can be safely deleted
 
 ## Chaining
-There are two compressions methods, GZip using switch -GZ (-UNGZ to decompress) and Brotli using switch -BR (-UNBR to decompress). Compression modes can be made per single file, but normally it is chained or called after -TAR (merging of files/folders into one file) and then compress it resulting in .tar.gz (GZip) or .tar.br (Brotli). Zip compression can compress directly into a single file using -ZIP switch (-UNZIP to decompress).
+There are several compressions methods, GZip using switch -GZ (-UNGZ to decompress), Brotli using switch -BR (-UNBR to decompress), BZip using switch -BZ (-UNBZ to decompress) and ZLib using switch -ZLIB (-UNZLIB to decompress). Compression modes can be made per single file, but normally it is chained or called after -TAR (merging of files/folders into one file) and then compress it resulting in .tar.gz (GZip) or .tar.br (Brotli). Zip compression can compress directly into a single file using -ZIP switch (-UNZIP to decompress).
 
 During chaining such as -BR switch, it does not need an input filename, because the input filename is the output of previous switch, however it can have extra options such as -F to force overwrite when the file already exist and -O to specify an output filename without using the default name. Each of the switch can has its own extra options (-F or -O).
 
