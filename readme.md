@@ -76,7 +76,7 @@ has packaging files together with compression, it is not available for tarball a
 to be chained for -SPLITSIZE or -SPLITCOUNT
 ```
 
-## Normal Usage
+## Brotli Normal Usage
 Merge multiple files/folders into a single tarball file and compress it using brotli compression
 
 ```
@@ -89,6 +89,71 @@ Decompress a tarball brotli compressed file and extract the tarball into folder
 
 ```
    -UNTB "output.tar.br" -O "outputfolder" -F
+```
+Output is a folder name "outputfolder" that contains the decompressed and extracted files, a temporary file "output.tar" is created and can be safely deleted
+
+## ZIP Normal Usage
+Merge multiple files/folders into a single zip file with zip compression
+
+```
+   -ZIP <filename> <directory> -O "output.zip" -F
+```
+
+Output is "output.zip"
+
+Decompress a zip compressed file and extract the zip into folder
+
+```
+   -UNZIP "output.zip" -O "outputfolder" -F
+```
+Output is a folder name "outputfolder" that contains the decompressed and extracted files
+
+## GZip Normal Usage
+Merge multiple files/folders into a single tarball file and compress it using gzip compression
+
+```
+   -TG <filename> <directory> -O "output.tar.gz" -F
+```
+
+Output is "output.tar.gz" and has a temporary file name "output.tar" that can be safely deleted
+
+Decompress a tarball gzip compressed file and extract the tarball into folder
+
+```
+   -UNTG "output.tar.gz" -O "outputfolder" -F
+```
+Output is a folder name "outputfolder" that contains the decompressed and extracted files, a temporary file "output.tar" is created and can be safely deleted
+
+## BZip2 Normal Usage
+Merge multiple files/folders into a single tarball file and compress it using bzip2 compression
+
+```
+   -TBZ <filename> <directory> -O "output.tar.bz2" -F
+```
+
+Output is "output.tar.bz2" and has a temporary file name "output.tar" that can be safely deleted
+
+Decompress a tarball bzip2 compressed file and extract the tarball into folder
+
+```
+   -UNTG "output.tar.bz2" -O "outputfolder" -F
+```
+Output is a folder name "outputfolder" that contains the decompressed and extracted files, a temporary file "output.tar" is created and can be safely deleted
+
+
+## ZLib Normal Usage
+Merge multiple files/folders into a single tarball file and compress it using zlib compression
+
+```
+   -TZ <filename> <directory> -O "output.tar.zlib" -F
+```
+
+Output is "output.tar.zlib" and has a temporary file name "output.tar" that can be safely deleted
+
+Decompress a tarball zlib compressed file and extract the tarball into folder
+
+```
+   -UNTZ "output.tar.zlib" -O "outputfolder" -F
 ```
 Output is a folder name "outputfolder" that contains the decompressed and extracted files, a temporary file "output.tar" is created and can be safely deleted
 
