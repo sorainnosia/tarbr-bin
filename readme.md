@@ -205,3 +205,4 @@ To decompress
 ```
 tarbr.exe -UNTG output.tar.gz -F -O output
 ```
+The extension .gz is because it is GZip compress, .br is because it is Brotli compress, for BZip2 uses extension .bz2 and for Zlib uses extension .zlib
