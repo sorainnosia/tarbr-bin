@@ -138,7 +138,7 @@ Output is "output.tar.bz2" and has a temporary file name "output.tar" that can b
 Decompress a tarball bzip2 compressed file and extract the tarball into folder
 
 ```
-   -UNTG "output.tar.bz2" -O "outputfolder" -F
+   -UNTBZ "output.tar.bz2" -O "outputfolder" -F
 ```
 Output is a folder name "outputfolder" that contains the decompressed and extracted files, a temporary file "output.tar" is created and can be safely deleted
 
