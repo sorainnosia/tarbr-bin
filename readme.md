@@ -198,10 +198,10 @@ Notice we uses -TB and -UNTB for Brotli algorithm to compress/decompress. To use
 Example of GZip algorithm
    
 ```
-tarbr.exe -TG "C:\Data\my file1.docx" "C:\Data\my file2.ppt" "C:\Data\Sheets" -F -O output.tar.br
+tarbr.exe -TG "C:\Data\my file1.docx" "C:\Data\my file2.ppt" "C:\Data\Sheets" -F -O output.tar.gz
 ```
 To decompress
 
 ```
-tarbr.exe -UNTG output.tar.br -F -O output
+tarbr.exe -UNTG output.tar.gz -F -O output
 ```
