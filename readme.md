@@ -91,6 +91,7 @@ Decompress a tarball brotli compressed file and extract the tarball into folder
    -UNTB "output.tar.br" -O "outputfolder" -F
 ```
 Output is a folder name "outputfolder" that contains the decompressed and extracted files, a temporary file "output.tar" is created and can be safely deleted
+Brotli compression is 10 times slower than normal gzip operations but it yield a good compression ratio, while compressing the program needs longer time to complete the operation
 
 ## ZIP Normal Usage
 Merge multiple files/folders into a single zip file with zip compression
