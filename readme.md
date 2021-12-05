@@ -167,7 +167,7 @@ During chaining such as -BR switch, it does not need an input filename, because 
 After a compression is done, the command can chain for example into -SPLITSIZE 1MB, in order to split the output into multiple files ending with <filename>.1 <filename>.2 for distributions and join it back using -JOIN <filename>.
    
 ## Download
-At right side, click Releases and from the assets download the file for your operating system. For Windows x64 machine the smallest binary available is tarbr-win-x64-bflat.exe
+At right side, click Releases and from the assets download the file for your operating system. For Windows x64 machine the smallest binary available is tarbr-win-x64-aot.exe. Find the file that matches your Operating System and Architecture, while -vs means it is compiled as Intermediate Language, -bflat means it is compiled to native using bflat and -aot means it is compiled to native using NativeAOT.
 
 Download the executable file and rename it to tarbr.exe and you use it via command prompt and CD into the directory or add it into PATH Environment Variable.
 ```
