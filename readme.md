@@ -99,7 +99,7 @@ Output is a folder name "outputfolder" that contains the decompressed and extrac
 Brotli compression is 10 times slower than normal gzip operations but it yield a good compression ratio. During brotli compression the program needs longer time to complete comparing to other compression algorithm.
 
 ## ZIP Normal Usage
-Merge multiple files/folders into a single zip file with zip compression
+Merge multiple files/folders into a single Zip file with Zip compression
 
 ```
    -ZIP <filename> <directory> -O "output.zip" -F
@@ -107,7 +107,7 @@ Merge multiple files/folders into a single zip file with zip compression
 
 Output is "output.zip"
 
-Decompress a zip compressed file and extract the zip into folder
+Decompress a Zip compressed file and extract the Zip into folder
 
 ```
    -UNZIP "output.zip" -O "outputfolder" -F
@@ -131,7 +131,7 @@ Decompress a 7z compressed file and extract the 7z into folder
 Output is a folder name "outputfolder" that contains the decompressed and extracted files
 
 ## GZip Normal Usage
-Merge multiple files/folders into a single tarball file and compress it using gzip compression
+Merge multiple files/folders into a single tarball file and compress it using GZip compression
 
 ```
    -TG <filename> <directory> -O "output.tar.gz" -F
@@ -139,7 +139,7 @@ Merge multiple files/folders into a single tarball file and compress it using gz
 
 Output is "output.tar.gz" and has a temporary file name "output.tar" that can be safely deleted
 
-Decompress a tarball gzip compressed file and extract the tarball into folder
+Decompress a tarball GZip compressed file and extract the tarball into folder
 
 ```
    -UNTG "output.tar.gz" -O "outputfolder" -F
@@ -147,7 +147,7 @@ Decompress a tarball gzip compressed file and extract the tarball into folder
 Output is a folder name "outputfolder" that contains the decompressed and extracted files, a temporary file "output.tar" is created and can be safely deleted
 
 ## BZip2 Normal Usage
-Merge multiple files/folders into a single tarball file and compress it using bzip2 compression
+Merge multiple files/folders into a single tarball file and compress it using BZip2 compression
 
 ```
    -TBZ <filename> <directory> -O "output.tar.bz2" -F
@@ -155,7 +155,7 @@ Merge multiple files/folders into a single tarball file and compress it using bz
 
 Output is "output.tar.bz2" and has a temporary file name "output.tar" that can be safely deleted
 
-Decompress a tarball bzip2 compressed file and extract the tarball into folder
+Decompress a tarball BZip2 compressed file and extract the tarball into folder
 
 ```
    -UNTBZ "output.tar.bz2" -O "outputfolder" -F
@@ -164,7 +164,7 @@ Output is a folder name "outputfolder" that contains the decompressed and extrac
 
 
 ## ZLib Normal Usage
-Merge multiple files/folders into a single tarball file and compress it using zlib compression
+Merge multiple files/folders into a single tarball file and compress it using ZLib compression
 
 ```
    -TZ <filename> <directory> -O "output.tar.zlib" -F
@@ -172,7 +172,7 @@ Merge multiple files/folders into a single tarball file and compress it using zl
 
 Output is "output.tar.zlib" and has a temporary file name "output.tar" that can be safely deleted
 
-Decompress a tarball zlib compressed file and extract the tarball into folder
+Decompress a tarball ZLib compressed file and extract the tarball into folder
 
 ```
    -UNTZ "output.tar.zlib" -O "outputfolder" -F
