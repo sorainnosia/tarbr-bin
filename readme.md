@@ -28,12 +28,16 @@ Please specify switch :
    -ZLIB <filename>                          ZLib compress <filename>
    -UNZLIB <filename>                        ZLib decompress <filename>
    -TAR <filename> <directory> ....          Tarball list of <filename> <directory> into a single file
-   -UNTAR <filename>                         Extract tarball into a list of <filename> <directory>
+   -UNTAR <filename>                         Extract tarball into a directory
    -ZIP <filename> <directory> ....          Zip list of <filename> and <directory> into a single file
-   -UNZIP <filename>                         Extract zip into a list of <filename> <directory>
+   -UNZIP <filename>                         Extract zip into a directory
+   -7Z <filename> <directory> ....           7Zip list of <filename> and <directory> into a single file
+   -UN7Z <filename>                          Extract 7Zip into a directory
 Extra options per switch
-   -O <output>                               Specifying the output filename for the switch
+   -O <output>                               Specifying the output file/directory name for the switch
    -F                                        Force overwrite existing files for the switch
+   -P <password>                             Providing password to compress/decompress for Zip and 7Zip
+   -SF <file1> <file2> <file3>               For -UNTAR -UNZIP and -UN7Z to extract specific file
 General info
    -I                                        Program information
 
