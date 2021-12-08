@@ -1,9 +1,9 @@
 # tarbr
 
 ## Description
-Tool to combine files/folder into a single tarball file and compressed it using Brotli/GZip algorithm. Support of Zip compression that combine files/folders into one file and uses Zip compression without tarball.
+Tool to combine files/folder into a single tarball file and compressed it using Brotli/GZip/ZLib/BZip2 algorithm. Support of Zip/7Zip compression that combine files/folders into one file and uses Zip/7Zip compression without tarball.
 
-Has feature to split the output file into multiple files using Size or Count.
+Has feature to split the output file into multiple files using size or count and support chaining.
 
 ```
 Please specify switch :
@@ -111,6 +111,22 @@ Decompress a zip compressed file and extract the zip into folder
 
 ```
    -UNZIP "output.zip" -O "outputfolder" -F
+```
+Output is a folder name "outputfolder" that contains the decompressed and extracted files
+
+## 7Zip Normal Usage
+Merge multiple files/folders into a single 7Zip file with 7Zip compression
+
+```
+   -7Z <filename> <directory> -O "output.7z" -F
+```
+
+Output is "output.7z"
+
+Decompress a 7z compressed file and extract the 7z into folder
+
+```
+   -UN7Z "output.7z" -O "outputfolder" -F
 ```
 Output is a folder name "outputfolder" that contains the decompressed and extracted files
 
