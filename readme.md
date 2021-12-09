@@ -18,7 +18,7 @@ Please specify switch :
    -SPLITCOUNT <filename> <count>            Splitting <filename> by count with equal size
    -SPLITSIZE <filename> <eg:1KB, 1MB, 1GB>  Splitting <filename> by size
    -JOIN <filename>                          Joining <filename>.1 <filename>.2 etc into <filename>
-   -SHA <filename>                           SHA 256 hash a <filename>
+   -CRC <filename>                           CRC checksum of a <filename>
    -BR <filename>                            Brotli compress <filename>
    -UNBR <filename>                          Brotli decompress <filename>
    -GZ <filename>                            GZip compress <filename>
@@ -28,11 +28,11 @@ Please specify switch :
    -ZLIB <filename>                          ZLib compress <filename>
    -UNZLIB <filename>                        ZLib decompress <filename>
    -TAR <filename> <directory> ....          Tarball list of <filename> <directory> into a single file
-   -UNTAR <filename>                         Extract tarball into a directory
+   -UNTAR <directory>                        Extract tarball into a directory
    -ZIP <filename> <directory> ....          Zip list of <filename> and <directory> into a single file
-   -UNZIP <filename>                         Extract zip into a directory
+   -UNZIP <directory>                        Extract zip into a directory
    -7Z <filename> <directory> ....           7Zip list of <filename> and <directory> into a single file
-   -UN7Z <filename>                          Extract 7Zip into a directory
+   -UN7Z <directory>                         Extract 7Zip into a directory
 Extra options per switch
    -O <output>                               Specifying the output file/directory name for the switch
    -F                                        Force overwrite existing files for the switch
