@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "SplitJoin": {
-      "commandName": "Project",
-      "commandLineArgs": "-7z release -p John -f -splitsize 5MB -f -tar -f -untar -f -join -f -br -f -gz -f -zlib -f -bz2 -f -unbz2 -f -unzlib -f -ungz -f -unbr -f -un7z -f -p John"
-    }
-  }
-}
