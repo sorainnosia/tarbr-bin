@@ -1,7 +1,7 @@
 # tarbr
 
 ## Description
-Tool to combine files/folder into a single tarball file and compressed it using Brotli/GZip/ZLib/BZip2 algorithm. Support of Zip/7Zip compression that combine files/folders into one file and uses Zip/7Zip compression without tarball.
+Tool to combine files/folder into a single tarball file and compressed it using Brotli/GZip/ZLib/BZip2 algorithm. Support of Zip/7Zip compression that combine files/folders into one file and uses Zip/7Zip compression without tarball. The assembly name of this project is SplitJoin.
 
 Has feature to split the output file into multiple files using size or count and support chaining.
 
